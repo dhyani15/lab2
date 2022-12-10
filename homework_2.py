@@ -137,6 +137,7 @@ idxToPrune = tf.argsort(averageActivationsCl)
 lastConvLayerWeights = B.get_layer("conv_3").get_weights()[0]
 lastConvLayerBiases  = B.get_layer("conv_3").get_weights()[1]
 pruned = 0
+
 for chIdx in idxToPrune:
 
   # Prune one channel at a time
